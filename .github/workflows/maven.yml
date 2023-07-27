@@ -20,7 +20,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Upload artifact
-      uses: actions/download-artifact
+      uses: actions/upload-artifact@v3
       with:
         name: bom.json
         path: target
